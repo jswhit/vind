@@ -109,11 +109,12 @@ if (DEFINED ENV{VIND_BUNDLE_SRC_DIR})
   endif()
 else()
   # ECMWF tools
-  ecbuild_bundle( PROJECT eckit GIT "https://github.com/ecmwf/eckit.git" TAG 1.32.2 )
-  ecbuild_bundle( PROJECT fckit GIT "https://github.com/ecmwf/fckit.git" TAG 0.14.0 )
+  ecbuild_bundle( PROJECT eckit GIT "https://github.com/ecmwf/eckit.git" TAG 1.32.3 )
+  ecbuild_bundle( PROJECT fckit GIT "https://github.com/ecmwf/fckit.git" TAG 0.14.1 )
   ecbuild_bundle( PROJECT fiat GIT "https://github.com/ecmwf-ifs/fiat.git" TAG 1.6.1 )
-  ecbuild_bundle( PROJECT ectrans GIT "https://github.com/ecmwf-ifs/ectrans.git" TAG 3094b24ec9c1862772e2b02f4e06c797247d57fc )
-  ecbuild_bundle( PROJECT atlas GIT "https://github.com/ecmwf/atlas.git" TAG 0.44.0 )
+  #ecbuild_bundle( PROJECT ectrans GIT "https://github.com/ecmwf-ifs/ectrans.git" TAG 3094b24ec9c1862772e2b02f4e06c797247d57fc )
+  ecbuild_bundle( PROJECT ectrans GIT "https://github.com/ecmwf-ifs/ectrans.git" TAG 1.7.0 )
+  ecbuild_bundle( PROJECT atlas GIT "https://github.com/ecmwf/atlas.git" TAG 0.44.1 )
 
   # oops
   ecbuild_bundle( PROJECT oops GIT "https://github.com/jcsda/oops.git" BRANCH develop UPDATE )
